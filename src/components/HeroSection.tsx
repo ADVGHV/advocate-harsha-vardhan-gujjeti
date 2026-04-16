@@ -36,7 +36,9 @@ const HeroSection = () => {
           className="mt-10"
         >
           <a
-            href="#contact"
+            href={`https://wa.me/917893838748?text=${encodeURIComponent("Hello! I am interested in booking a legal consultation.\n\nName: \nNature of Matter: (e.g., Civil, Criminal, Corporate) \nPreferred Date/Time: \nPlease let me know the next steps. Thank you.")}`}
+            target="_blank"
+            rel="noreferrer"
             className="inline-block bg-gold text-primary-foreground font-body font-semibold text-sm uppercase tracking-[0.2em] px-10 py-4 hover:shadow-[0_0_30px_hsl(43_76%_52%_/_0.3)] transition-all duration-500"
           >
             Book a Consultation
