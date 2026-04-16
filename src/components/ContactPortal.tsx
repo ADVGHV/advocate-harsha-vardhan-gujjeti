@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 const contactInfo = [
   { icon: Mail, label: "Email", value: "advharshavardhangujjeti@gmail.com", href: "mailto:advharshavardhangujjeti@gmail.com" },
   { icon: Phone, label: "Mobile", value: "+91 7893838748", href: "tel:+917893838748" },
   { icon: MapPin, label: "Address", value: "H. No: 3-45, RC Reddy Colony, BHEL, Ramachandrapuram, Hyderabad, Telangana 502032", href: undefined },
+  { icon: Linkedin, label: "LinkedIn", value: "Harsha Vardhan Gujjeti", href: "https://www.linkedin.com/in/harsha-vardhan-gujjeti-a20a90218" },
 ];
 
 const ContactPortal = () => {
