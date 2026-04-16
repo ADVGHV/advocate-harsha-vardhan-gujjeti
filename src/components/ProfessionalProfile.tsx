@@ -12,7 +12,7 @@ const ProfessionalProfile = () => {
           className="flex justify-center"
         >
           <div className="relative">
-            <img src={portraitImg} alt="Harsha Vardhan Gujjeti, Advocate" className="w-72 h-96 object-cover object-top border-2 border-gold/40" />
+            <img src={portraitImg} alt="Harsha Vardhan Gujjeti, Advocate" className="w-80 h-[28rem] object-cover object-center border-2 border-gold/40" />
             {/* Gold corner accents */}
             <div className="absolute -top-2 -left-2 w-8 h-8 border-t-2 border-l-2 border-gold" />
             <div className="absolute -top-2 -right-2 w-8 h-8 border-t-2 border-r-2 border-gold" />
@@ -33,10 +33,13 @@ const ProfessionalProfile = () => {
           </h2>
           <div className="w-16 h-px bg-gold mb-6" />
           <p className="text-muted-foreground font-body leading-relaxed mb-4">
-            A distinguished advocate known for meticulous legal strategy and an unwavering commitment to client success. With deep expertise spanning civil, criminal, and corporate law, Harsha Vardhan Gujjeti brings clarity and conviction to every case.
+            Harsha Vardhan Gujjeti is a distinguished advocate with extensive experience in civil, criminal, corporate, constitutional, and consumer law. Practising before Trial Courts, High Courts, and the Supreme Court of India, Harsha brings strategic insight and unwavering dedication to every case.
+          </p>
+          <p className="text-muted-foreground font-body leading-relaxed mb-4">
+            With a commitment to excellence and a track record of successful outcomes, he represents clients with the highest standards of professional ethics and legal acumen.
           </p>
           <p className="text-muted-foreground font-body leading-relaxed">
-            Driven by the belief that every individual deserves justice of the highest order, the practice is built on pillars of integrity, precision, and an unrelenting pursuit of excellence in advocacy.
+            <span className="text-gold font-medium">Education:</span> BA.LLB from University College of Law, Osmania University · LLM at NALSAR University of Law.
           </p>
         </motion.div>
       </div>
