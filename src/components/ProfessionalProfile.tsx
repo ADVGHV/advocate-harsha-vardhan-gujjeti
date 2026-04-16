@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import portraitImg from "@/assets/portrait.jpg";
 const ProfessionalProfile = () => {
   return (
     <section className="py-24 px-6 bg-card">
@@ -12,14 +12,7 @@ const ProfessionalProfile = () => {
           className="flex justify-center"
         >
           <div className="relative">
-            <div className="w-72 h-96 bg-secondary border-2 border-gold/40 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full border border-gold/30 flex items-center justify-center">
-                  <span className="text-gold font-heading text-3xl">HG</span>
-                </div>
-                <p className="text-muted-foreground text-sm font-body">Professional Portrait</p>
-              </div>
-            </div>
+            <img src={portraitImg} alt="Harsha Vardhan Gujjeti, Advocate" className="w-72 h-96 object-cover object-top border-2 border-gold/40" />
             {/* Gold corner accents */}
             <div className="absolute -top-2 -left-2 w-8 h-8 border-t-2 border-l-2 border-gold" />
             <div className="absolute -top-2 -right-2 w-8 h-8 border-t-2 border-r-2 border-gold" />
