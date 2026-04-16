@@ -64,7 +64,14 @@ const ContactPortal = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="space-y-5"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={(e) => {
+              e.preventDefault();
+              const subject = encodeURIComponent(`Consultation Request from ${form.name}`);
+              const body = encodeURIComponent(
+                `Name: ${form.name}\nEmail: ${form.email}\nPhone: ${form.phone}\n\nMessage:\n${form.message}`
+              );
+              window.open(`mailto:advharshavardhangujjeti@gmail.com?subject=${subject}&body=${body}`, '_self');
+            }}
           >
             {[
               { name: "name", label: "Full Name", type: "text" },
